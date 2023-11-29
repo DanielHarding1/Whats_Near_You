@@ -1,8 +1,7 @@
 var time = 0;
 
-
 var APIKey = "1";
-var queryURL = "https://thecocktaildb.com/api/json/v1/1/search.php?s=margarita&appid=" + APIKey;
+var queryURL = "https://thecocktaildb.com/api/json/v1/1/filter.php?i=Gin&appid=" + APIKey;
 
 fetch(queryURL)
     .then(function (response) {
