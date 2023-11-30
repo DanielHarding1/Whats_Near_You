@@ -17,9 +17,7 @@ fetch(queryURL)
         console.log(data);
     })
 
-
-    document.querySelector('#')
-    $("#ingredient-submit").on("submit", function() {
+    document.querySelector('#ingredient-submit').addEventListener("click", function() {
         var ingredient = $("#ingredient").val().trim;
         console.log(ingredient);
-    });
+    })
