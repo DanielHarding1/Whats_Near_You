@@ -12,6 +12,10 @@ fetch(queryURL)
         console.log(data);
     })
 
-    
-    var ingredient = $("#ingredient").val();
-    console.log(ingredient);
+
+
+    document.querySelector('#')
+    $("#ingredient-submit").on("submit", function() {
+        var ingredient = $("#ingredient").val().trim;
+        console.log(ingredient);
+    });
