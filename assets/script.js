@@ -11,3 +11,7 @@ fetch(queryURL)
         console.log(queryURL);
         console.log(data);
     })
+
+    
+    var ingredient = $("#ingredient").val();
+    console.log(ingredient);
