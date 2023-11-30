@@ -3,24 +3,132 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta charset="UTF-8" />
-    <title>My Map</title>
     <meta
       name="viewport"
       content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
     />
-    <!-- Replace version in the URL with desired library version -->
-    <link href="./assets/style.css" />
     <link
       rel="stylesheet"
       type="text/css"
       href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps.css"
     />
+    <title>What's Near You?</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
   </head>
   <body>
-    <div id="map" class="map"></div>
-    <!-- Replace version in the URL with desired library version -->
-    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
-    <script src="./assets/script.js"></script>
+    
+    
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav id="header-menu" class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="assets/images/logo-png.png"
+            id="navbar-logo"
+            class="logo-gif"
+          />What's Near You?</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Create Your Cocktail</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Cocktails Near You</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              id="ingredient"
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit" id="ingredient-submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- End of NavBar -->
+    <!-- ---------------- -->
+    <!-- Page Section 1: Slideshow -->
+    <div id="slideshow">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/images/cocktails.jpg"
+              class="d-block w-100"
+              alt="a picture of multiple cocktails in various colours and sizes"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/diy-cocktails.jpg"
+              class="d-block w-100"
+              alt="a picture of six DIY cocktail combo ideas"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/wallpaper-cocktails.jpg"
+              class="d-block w-100"
+              alt="a range of cocktails arranged in a wallpaper like style on a yellow background"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- End of Slideshow -->
+    <!-- ---------------- -->
+    <!-- Second Section -->
 
         </form>
       </div>
@@ -44,6 +152,9 @@
     <script type="text/javascript" src="./assets/script1.js"></script>
     <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
 
+    <div id="map" class="map"></div>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
+    <script src="./assets/script.js"></script>
 
   </body>
 </html>
