@@ -8,8 +8,6 @@
       content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
     />
     <link
-      rel="stylesheet"
-      type="text/css"
       href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps.css"
     />
     <title>What's Near You?</title>
@@ -20,10 +18,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
-  </head>
-  <body>
-    
-    
   </head>
   <body>
     <!-- Nav Bar -->
@@ -71,7 +65,11 @@
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit" id="ingredient-submit">
+            <button
+              class="btn btn-outline-success"
+              type="submit"
+              id="ingredient-submit"
+            >
               Search
             </button>
           </form>
@@ -128,8 +126,34 @@
     </div>
     <!-- End of Slideshow -->
     <!-- ---------------- -->
-    <!-- Second Section -->
-
+    <!-- Section 2: Cocktails -->
+    <section id="section2" class="section2">
+      <!-- card image 1 -->
+      <div class="card text-bg-dark card-image">
+        <img src="..." class="card-img" alt="..." />
+        <div class="card-img-overlay">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <!-- card image 2 -->
+      <div class="card text-bg-dark card-image">
+        <img src="..." class="card-img" alt="..." />
+        <div class="card-img-overlay">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </section>
+    <!-- End of Section 2 -->
     <!-- Search Bar -->
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
@@ -183,6 +207,5 @@
     <div id="map" class="map"></div>
     <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
     <script src="./assets/script.js"></script>
-
   </body>
 </html>
