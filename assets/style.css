@@ -11,7 +11,7 @@ body {
 #map {
   width: 40vh;
   height: 40vh;
-  margin-left: 1000px;
+  margin-left: 0px;
 }
 
 #navbar-logo {
@@ -28,7 +28,26 @@ body {
   border-radius: 20px;
 }
 
+.section3 {
+  width: 100vh;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid yellow;
+  border-radius: 20px;
+}
+ 
 .card-image {
   min-height: 300px;
-  min-width: 40%;
+  min-width: 100%;
+}
+
+.logo-gif {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.logo.png {
+  max-width: 200px;
+  max-height: 200px;
 }
