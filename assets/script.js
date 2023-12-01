@@ -9,15 +9,16 @@ var queryURL =
   "https://thecocktaildb.com/api/json/v1/1/filter.php?i=Gin&appid=" + APIKey;
 
 fetch(queryURL)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        console.log(queryURL);
-        console.log(data);
-    })
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(queryURL);
+    console.log(data);
+  });
 
-    document.querySelector('#ingredient-submit').addEventListener("click", function() {
-        var ingredient = $("#ingredient").val().trim;
-        console.log(ingredient);
-    })
+$("#ingredient-submit").on("click", function (event) {
+  event.preventDefault();
+  var ingredient = $("#ingredient").val().trim();
+  console.log(ingredient);
+});

@@ -74,7 +74,6 @@
           <form class="d-flex" role="search">
             <input
               class="form-control me-2"
-              id="ingredient"
               type="text"
               placeholder="Search"
               aria-label="Search"
@@ -82,10 +81,11 @@
             <button
               class="btn btn-outline-success"
               type="submit"
-              id="ingredient-submit"
+              id="submit"
             >
-              Search
-            </button>
+              Search for a Cocktail
+          </button>
+            
           </form>
         </div>
       </div>
@@ -174,14 +174,15 @@
         <form class="d-flex" role="search">
           <input
             class="form-control me-2"
-            type="search"
-            placeholder="Search"
+            id="ingredient"
+            type="text"
+            placeholder="Enter Ingredient"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-success" type="submit" id="ingredient-submit">Search</button>
         </form>
       </div>
-    </nav>
+    </nav> 
     <!-- End of Search Bar -->
     <!-- Check Box section -->
     <div class="form-check hide">
@@ -216,13 +217,7 @@
     </div>
     <!-- End of Loading Spinner -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./assets/script.js"></script>
     <script type="text/javascript" src="./assets/script1.js"></script>
-    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
-
-    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.1.2-public-preview.15/services/services-web.min.js"></script>
-    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.1.2-public-preview.15/services/services-web.min.js"></script>
-
     <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.1.3-public-preview.0/SearchBox-web.js"></script>
 
     <div id="map" class="map"></div>
