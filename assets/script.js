@@ -15,7 +15,7 @@ var queryURL =
   "https://thecocktaildb.com/api/json/v1/1/filter.php?i=" + ingredient + "&appid=" + APIKey;
 
 console.log(queryURL);
-});
+
 fetch(queryURL)
   .then(function (response) {
     return response.json();
@@ -23,5 +23,5 @@ fetch(queryURL)
   .then(function (data) {
     console.log(data);
   });
-
+});
 
