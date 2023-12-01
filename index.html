@@ -7,9 +7,17 @@
       name="viewport"
       content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
     />
+
+  </head>
+  <body>
+    <!-- Replace version in the URL with desired library version -->
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
+    <script src="./assets/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps.css"
     />
+
     <title>What's Near You?</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -17,6 +25,11 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.1.3-public-preview.0/SearchBox.css"
+  />
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
   </head>
   <body>
@@ -168,7 +181,6 @@
         </form>
       </div>
     </nav>
-    <div id="map" class="map"></div>
     <!-- End of Search Bar -->
     <!-- Check Box section -->
     <div class="form-check hide">
@@ -194,6 +206,8 @@
         Checked checkbox
       </label>
     </div>
+    <div id="map" class="map"></div>
+
     <!-- End of Checks -->
     <!-- Loading Spinner -->
     <div class="spinner-border hide" role="status">
@@ -202,10 +216,17 @@
     <!-- End of Loading Spinner -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/script.js"></script>
+    <script type="text/javascript" src="./assets/script1.js"></script>
     <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
+
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.1.2-public-preview.15/services/services-web.min.js"></script>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.1.2-public-preview.15/services/services-web.min.js"></script>
+
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.1.3-public-preview.0/SearchBox-web.js"></script>
 
     <div id="map" class="map"></div>
     <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
     <script src="./assets/script.js"></script>
+
   </body>
 </html>

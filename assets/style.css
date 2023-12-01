@@ -9,8 +9,9 @@ body {
 }
 
 #map {
-  width: 20vh;
-  height: 20vh;
+  width: 40vh;
+  height: 40vh;
+  margin-left: 1000px;
 }
 
 #navbar-logo {
