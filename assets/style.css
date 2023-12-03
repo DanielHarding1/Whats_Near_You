@@ -30,7 +30,7 @@ body {
 
 .section3 {
   width: 100vh;
-  height: 400px;
+  height: 600px;
   display: flex;
   flex-direction: row;
   border: 2px solid yellow;
@@ -55,4 +55,8 @@ body {
 .logo.png {
   max-width: 200px;
   max-height: 200px;
+}
+
+.hide {
+  display: none;
 }

@@ -150,6 +150,22 @@
           <p class="card-text">
             Enter your ingredients below to create a mixer designed for you!
           </p>
+          <!-- Search Bar -->
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  id="ingredient"
+                  type="text"
+                  placeholder="Enter Ingredient"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit" id="ingredient-submit">Search</button>
+              </form>
+            </div>
+          </nav> 
+    <!-- End of Search Bar -->
           <p class="card-text"><small>Last updated 3 mins ago</small></p>
         </div>
       </div>
@@ -241,22 +257,7 @@
       </div>
     </section>
     <!-- End of Section 3: Location -->
-    <!-- Search Bar -->
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            id="ingredient"
-            type="text"
-            placeholder="Enter Ingredient"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit" id="ingredient-submit">Search</button>
-        </form>
-      </div>
-    </nav> 
-    <!-- End of Search Bar -->
+    
     <!-- Check Box section -->
     <div class="form-check hide">
       <input
@@ -284,6 +285,45 @@
     <div id="map" class="map"></div>
 
     <!-- End of Checks -->
+    <!-- Footer Section -->
+    <div class="card-group">
+      <!-- Links -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <!-- End of Links -->
+      <!-- Photo -->
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <!-- End of Photo -->
+      <!-- About/Bio -->
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <!-- End of About/Bio -->
+    </div>
+    <!-- End of Footer section -->
     <!-- Loading Spinner -->
     <div class="spinner-border hide" role="status">
       <span class="visually-hidden">Loading...</span>
