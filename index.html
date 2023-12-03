@@ -145,26 +145,132 @@
     <section id="section2" class="section2">
       <!-- card image 1 -->
       <div class="card text-bg-dark card-image">
-        <img src="assets/images/diy-cocktails.jpg" class="card-img" alt="photo showing a range of DIY cocktail mixes" />
+        <!-- <img src="assets/images/diy-cocktails.jpg" class="card-img" alt="photo showing a range of DIY cocktail mixes" /> -->
         <div class="card-img-overlay">
           <h5 class="card-title">Choose Your Cocktail!</h5>
           <p class="card-text">
-            Enter your ingredients below to create a mixer designed for you!
+            Search for one ingredient below to find your perfect cocktail!
           </p>
-          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+    <!-- search for a specific ingredient -->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            id="ingredient"
+            type="text"
+            placeholder="Enter Ingredient"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit" id="ingredient-submit">Search</button>
+        </form>
+      </div>
+    </nav> 
+        <p>Select an ingredient below to find your perfect cocktail!</p>
+      <!-- Move This Button To The End Of Selections When The Box Is Bigger -->
+        <button class="btn btn-outline-success" type="submit" id="selection-submit">Search</button>
+        <input type="checkbox"/>
+        <label id="selection" input="Ale">Ale</label>
+        <input type="checkbox" id="selection"/>
+        <label>Amaretto</label>
+        <input type="checkbox"/>
+        <label>Applejack</label>
+        <input type="checkbox"/>
+        <label>Bitters</label>
+        <input type="checkbox"/>
+        <label>Bitters (Orange)</label>
+        <input type="checkbox"/>
+        <label>Bourbon</label>
+        <input type="checkbox"/>
+        <label>Brandy</label>
+        <input type="checkbox"/>
+        <label>Brandy (Apple)</label>
+        <input type="checkbox"/>
+        <label>Brandy (Apricot)</label>
+        <input type="checkbox"/>
+        <label>Brandy (Blackberry)</label>
+        <input type="checkbox"/>
+        <label>Brandy (Cherry)</label>
+        <input type="checkbox"/>
+        <label>Brandy (Coffee)</label>
+        <input type="checkbox"/>
+        <label>Champagne</label>
+        <input type="checkbox"/>
+        <label>Cider</label>
+        <input type="checkbox"/>
+        <label>Creme de Cassis</label>
+        <input type="checkbox"/>
+        <label>Dubonnet Rouge</label>
+        <input type="checkbox"/>
+        <label>Gin</label>
+        <input type="checkbox"/>
+        <label>Irish Cream</label>
+        <input type="checkbox"/>
+        <label>Johnnie Walker</label>
+        <input type="checkbox"/>
+        <label>Kahlua</label>
+        <input type="checkbox"/>
+        <label>Lager</label>
+        <input type="checkbox"/>
+        <label>Liqueur(Chocolate)</label>
+        <input type="checkbox"/>
+        <label></label>
+        <input type="checkbox"/>
+        <label>Liqueur (Midori Melon)</label>
+        <input type="checkbox"/>
+        <label>Ouzo</label>
+        <input type="checkbox"/>
+        <label>Port</label>
+        <input type="checkbox"/>
+        <label>Rum</label>
+        <input type="checkbox"/>
+        <label>Rum (Añejo)</label>
+        <input type="checkbox"/>
+        <label>Rum (Dark)</label>
+        <input type="checkbox"/>
+        <label>Rum (Light)</label>
+        <input type="checkbox"/>
+        <label>Sambuca</label>
+        <input type="checkbox"/>
+        <label>Schnapps (Peppermint)</label>
+        <input type="checkbox"/>
+        <label>Schnapps (Strawberry)</label>
+        <input type="checkbox"/>
+        <label>Scotch</label>
+        <input type="checkbox"/>
+        <label>Southern Comfort</label>
+        <input type="checkbox"/>
+        <label>Tequila</label>
+        <input type="checkbox"/>
+        <label>Triple Sec</label>
+        <input type="checkbox"/>
+        <label>Vermouth (Dry)</label>
+        <input type="checkbox"/>
+        <label>Vermouth (Sweet)</label>
+        <input type="checkbox"/>
+        <label>Vodka</label>
+        <input type="checkbox"/>
+        <label>Vodka (Lemon)</label>
+        <input type="checkbox"/>
+        <label>Whiskey</label>
+        <input type="checkbox"/>
+        <label>Whiskey (Blended)</label>
+        <input type="checkbox"/>
+        <label>Whiskey (Irish)</label>
+        <input type="checkbox"/>
+        <label>Wine (Red)</label>
+
         </div>
       </div>
       <!-- card image 2 -->
-      <div class="card text-bg-dark card-image">
-        <img src="assets/images/logo-gif.gif" class="card-img logo-gif" alt="..." />
+      <div class="card text-bg-dark card-image" id="cocktailImage"> 
         <div class="card-img-overlay">
-          <h5 class="card-title">Editable Text</h5>
-          <p class="card-text">
-            Cocktail Formation to be dynamically replaced with JS in the DOM.
-          </p>
-          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+          <h5 class="card-title">Your Cocktail</h5>
+          <h6 class="card-text" id="cocktailName">Name</h6>
+          <p id="cocktailIngredients">Ingredients</p>
+          <p id="cocktaiInstructions">Instructions</p>
         </div>
-      </div>
+     </div>
     </section>
     <!-- End of Section 2: Cocktails-->
     <!-- Section 3: Location -->
@@ -242,22 +348,6 @@
       </div>
     </section>
     <!-- End of Section 3: Location -->
-    <!-- Search Bar -->
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            id="ingredient"
-            type="text"
-            placeholder="Enter Ingredient"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit" id="ingredient-submit">Search</button>
-        </form>
-      </div>
-    </nav> 
-    <!-- End of Search Bar -->
     <!-- Check Box section -->
     <div class="form-check hide">
       <input
@@ -267,7 +357,7 @@
         id="flexCheckDefault"
       />
       <label class="form-check-label" for="flexCheckDefault">
-        Default checkbox
+        Gin
       </label>
     </div>
     <div class="form-check">
