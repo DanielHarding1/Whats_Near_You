@@ -36,6 +36,11 @@ body {
   border: 2px solid yellow;
   border-radius: 20px;
 }
+
+#location-image {
+  max-width: 400px;
+  max-height: 400px;
+}
  
 .card-image {
   min-height: 300px;
