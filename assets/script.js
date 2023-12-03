@@ -1,8 +1,8 @@
 var APIKey = "1";
 
-// Searches for a cocktail by name  
+// Searches for a cocktail by name
 // To Do: How Do I Locate the information?
-  // To Do: Set the cocktail image as the background
+// To Do: Set the cocktail image as the background
 $("#cocktail-submit").on("click", function (event) {
   event.preventDefault();
   var cocktail = $("#cocktail").val();
@@ -22,16 +22,32 @@ $("#cocktail-submit").on("click", function (event) {
     })
     .then(function (data) {
       console.log(data);
-
+      displayCocktail(data);
+      createButton(data.drinks);
       $("#cocktail").text(JSON.stringify(data));
     });
 });
 
 function displayCocktail(data) {
-
-  $("#cocktailName").text(data[0].drinks[0].strDrink);
+  console.log(data);
+  $("#cocktailName").text(data.drinks[0].strDrink);
   $("#cocktailIngredients").text(data.drinks[0].strIngredient1);
   $("#cocktailInstructions").text(data.drinks[0].strInstructions);
+}
+
+function createButton(drinks) {
+  $("#drinks-view").empty();
+  for (var i = 0; i < drinks.length; i++) {
+    var a = $("<button>");
+    a.text(drinks[i].strDrink);
+    $("#drinks-view").append(a);
+    a.on("click", cocktailFinder);
+  }
+}
+
+function cocktailFinder(s) {
+  var search = s.target.textContent;
+  console.log(search);
 }
 
 // Searches for cocktail by user input
@@ -63,7 +79,7 @@ $("#ingredient-submit").on("click", function (event) {
 // To Do: Use the 'idDrink' to find the cocktail name, ingredients and instructions
 $("#selection-submit").on("click", function (event) {
   event.preventDefault();
-  var alcohol = $("#selection").text();
+  var alcohol = $("#alcoholSelect input[name=selection]:checked").val();
   console.log(alcohol);
 
   var alcoholQueryURL =

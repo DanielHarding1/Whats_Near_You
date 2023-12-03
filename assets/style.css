@@ -30,7 +30,7 @@ body {
 
 .section3 {
   width: 100vh;
-  height: 400px;
+  height: auto;
   display: flex;
   flex-direction: row;
   border: 2px solid yellow;
