@@ -1,6 +1,8 @@
 var APIKey = "1";
 
-// Searches for a cocktail by name
+// Searches for a cocktail by name  
+// To Do: How Do I Locate the information?
+  // To Do: Set the cocktail image as the background
 $("#cocktail-submit").on("click", function (event) {
   event.preventDefault();
   var cocktail = $("#cocktail").val();
@@ -26,14 +28,14 @@ $("#cocktail-submit").on("click", function (event) {
 });
 
 function displayCocktail(data) {
-  // How Do I Locate the information? 
+
   $("#cocktailName").text(data[0].drinks[0].strDrink);
   $("#cocktailIngredients").text(data.drinks[0].strIngredient1);
   $("#cocktailInstructions").text(data.drinks[0].strInstructions);
 }
 
 // Searches for cocktail by user input
-
+// TO DO: Create a list of the drinks that could be made and then using their 'idDrink' search through this API : www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007 to find the cocktail name, ingredients and instructions
 $("#ingredient-submit").on("click", function (event) {
   event.preventDefault();
   var ingredient = $("#ingredient").val();
@@ -56,25 +58,27 @@ $("#ingredient-submit").on("click", function (event) {
     });
 });
 
-// Searches for cocktail ingredients by selections
+// Searches for cocktail by selections
+// To Do: How do I ensure that the ingredient which has been selected is the one that is being searched for?
+// To Do: Use the 'idDrink' to find the cocktail name, ingredients and instructions
 $("#selection-submit").on("click", function (event) {
   event.preventDefault();
-  var alcohol = $("#selection").val();
+  var alcohol = $("#selection").text();
   console.log(alcohol);
 
-//   var ingredientQueryURL =
-//     "https://thecocktaildb.com/api/json/v1/1/filter.php?i=" +
-//     ingredient +
-//     "&appid=" +
-//     APIKey;
+  var alcoholQueryURL =
+    "https://thecocktaildb.com/api/json/v1/1/filter.php?i=" +
+    alcohol +
+    "&appid=" +
+    APIKey;
 
-//   console.log(ingredientQueryURL);
+  console.log(alcoholQueryURL);
 
-//   fetch(ingredientQueryURL)
-//     .then(function (response) {
-//       return response.json();
-//     })
-//     .then(function (data) {
-//       console.log(data);
-//     });
+  fetch(alcoholQueryURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+    });
 });
