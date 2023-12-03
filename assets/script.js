@@ -1,9 +1,3 @@
-tt.setProductInfo("Whats Near You", "V1");
-tt.map({
-  key: "qyRVte5GUbZjU2y2Z9LftPqp8OBwVPoa",
-  container: "map",
-});
-
 $("#ingredient-submit").on("click", function (event) {
   event.preventDefault();
   var ingredient = $("#ingredient").val();
