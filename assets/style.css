@@ -61,3 +61,12 @@ body {
   display: none;
 }
 
+#map {
+  width: 50vh;
+  height: 50vh;
+}
+
+.tt-search-box {
+  width: 50vh;
+  height: 5vh;
+}

@@ -12,7 +12,6 @@
   </head>
   <body>
     <!-- Replace version in the URL with desired library version -->
-    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
     <script src="./assets/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -75,15 +74,16 @@
             <input
               class="form-control me-2"
               type="text"
-              placeholder="Search"
+              id="cocktail"
+              placeholder="Enter Cocktail"
               aria-label="Search"
             />
             <button
               class="btn btn-outline-success"
               type="submit"
-              id="submit"
+              id="cocktail-submit"
             >
-              Search for a Cocktail
+              Search 
           </button>
             
           </form>
@@ -144,11 +144,11 @@
     <section id="section2" class="section2">
       <!-- card image 1 -->
       <div class="card text-bg-dark card-image">
-        <img src="assets/images/diy-cocktails.jpg" class="card-img" alt="photo showing a range of DIY cocktail mixes" />
+        <!-- <img src="assets/images/diy-cocktails.jpg" class="card-img" alt="photo showing a range of DIY cocktail mixes" /> -->
         <div class="card-img-overlay">
           <h5 class="card-title">Choose Your Cocktail!</h5>
           <p class="card-text">
-            Enter your ingredients below to create a mixer designed for you!
+            Search for one ingredient below to find your perfect cocktail!
           </p>
           <!-- Search Bar -->
           <nav class="navbar bg-body-tertiary">
@@ -167,19 +167,128 @@
           </nav> 
     <!-- End of Search Bar -->
           <p class="card-text"><small>Last updated 3 mins ago</small></p>
+    <!-- search for a specific ingredient -->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            id="ingredient"
+            type="text"
+            placeholder="Enter Ingredient"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit" id="ingredient-submit">Search</button>
+        </form>
+      </div>
+    </nav> 
+        <p>Select an ingredient below to find your perfect cocktail!</p>
+        <div id="drinks-view"></div>
+      <!-- Move This Button To The End Of Selections When The Box Is Bigger -->
+        <button class="btn btn-outline-success" type="submit" id="selection-submit">Search</button>
+        <form id="alcoholSelect">
+        <input type="radio" name="selection" value="Ale"/>
+        <label name="selection">Ale</label>
+        <input type="radio" name="selection" value="Amaretto"/>
+        <label>Amaretto</label>
+        <input type="radio" name="selection"/>
+        <label>Applejack</label>
+        <input type="radio" name="selection"/>
+        <label>Bitters</label>
+        <input type="radio" name="selection"/>
+        <label>Bitters (Orange)</label>
+        <input type="radio" name="selection"/>
+        <label>Bourbon</label>
+        <input type="radio"/>
+        <label>Brandy</label>
+        <input type="radio"/>
+        <label>Brandy (Apple)</label>
+        <input type="radio"/>
+        <label>Brandy (Apricot)</label>
+        <input type="radio"/>
+        <label>Brandy (Blackberry)</label>
+        <input type="radio"/>
+        <label>Brandy (Cherry)</label>
+        <input type="radio"/>
+        <label>Brandy (Coffee)</label>
+        <input type="radio"/>
+        <label>Champagne</label>
+        <input type="radio"/>
+        <label>Cider</label>
+        <input type="radio"/>
+        <label>Creme de Cassis</label>
+        <input type="radio"/>
+        <label>Dubonnet Rouge</label>
+        <input type="radio"/>
+        <label>Gin</label>
+        <input type="radio"/>
+        <label>Irish Cream</label>
+        <input type="radio"/>
+        <label>Johnnie Walker</label>
+        <input type="radio"/>
+        <label>Kahlua</label>
+        <input type="radio"/>
+        <label>Lager</label>
+        <input type="radio"/>
+        <label>Liqueur(Chocolate)</label>
+        <input type="radio"/>
+        <label></label>
+        <input type="radio"/>
+        <label>Liqueur (Midori Melon)</label>
+        <input type="radio"/>
+        <label>Ouzo</label>
+        <input type="radio"/>
+        <label>Port</label>
+        <input type="radio"/>
+        <label>Rum</label>
+        <input type="radio"/>
+        <label>Rum (Añejo)</label>
+        <input type="radio"/>
+        <label>Rum (Dark)</label>
+        <input type="radio"/>
+        <label>Rum (Light)</label>
+        <input type="radio"/>
+        <label>Sambuca</label>
+        <input type="radio"/>
+        <label>Schnapps (Peppermint)</label>
+        <input type="radio"/>
+        <label>Schnapps (Strawberry)</label>
+        <input type="radio"/>
+        <label>Scotch</label>
+        <input type="radio"/>
+        <label>Southern Comfort</label>
+        <input type="radio"/>
+        <label>Tequila</label>
+        <input type="radio"/>
+        <label>Triple Sec</label>
+        <input type="radio"/>
+        <label>Vermouth (Dry)</label>
+        <input type="radio"/>
+        <label>Vermouth (Sweet)</label>
+        <input type="radio"/>
+        <label>Vodka</label>
+        <input type="radio"/>
+        <label>Vodka (Lemon)</label>
+        <input type="radio"/>
+        <label>Whiskey</label>
+        <input type="radio"/>
+        <label>Whiskey (Blended)</label>
+        <input type="radio"/>
+        <label>Whiskey (Irish)</label>
+        <input type="radio"/>
+        <label>Wine (Red)</label>
+      </form>
         </div>
       </div>
       <!-- card image 2 -->
-      <div class="card text-bg-dark card-image">
-        <img src="assets/images/logo-gif.gif" class="card-img logo-gif" alt="..." />
+      <div class="card text-bg-dark card-image" id="cocktailImage"> 
         <div class="card-img-overlay">
-          <h5 class="card-title">Editable Text</h5>
-          <p class="card-text">
-            Cocktail Formation to be dynamically replaced with JS in the DOM.
-          </p>
-          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+          <h5 class="card-title">Your Cocktail</h5>
+          <h6 class="card-text" id="cocktailName">Name</h6>
+          <p id="cocktailIngredients">Ingredients</p>
+          <p id="cocktailInstructions">Instructions</p>
         </div>
-      </div>
+     </div>
     </section>
     <!-- End of Section 2: Cocktails-->
     <!-- Section 3: Location -->
@@ -244,20 +353,32 @@
       </div>
       <!-- card image 2 -->
       <div class="card text-bg-dark card-image" id="map-card">
-        <img src="..." class="card-img" alt="..." />
+        
         <div class="card-img-overlay">
-          <h5 class="card-title">MAP VIEW</h5>
-          <div id="map" class="map"></div>
-
-          <p class="card-text">
-            Click and drag to move around the map!
-          </p>
-          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+          <h5 class="card-title"></h5>
+          <div class="map-view">
+            <div class="tt-side-panel">
+              <header class="tt-side-panel__header"></header>
+              <div class="tt-tabs js-tabs">
+                <div class="tt-tabs__panel">
+                  <div class="js-results" hidden="hidden"></div>
+                  <div class="js-results-loader" hidden="hidden">
+                    <div class="loader-center"><span class="loader"></span></div>
+                  </div>
+                  <div class="tt-tabs__placeholder js-results-placeholder"></div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div id="map" class="full-map"></div>
+          </div>
         </div>
-      </div>
+       
+
+          
+      
     </section>
     <!-- End of Section 3: Location -->
-    
     <!-- Check Box section -->
     <div class="form-check hide">
       <input
@@ -267,7 +388,7 @@
         id="flexCheckDefault"
       />
       <label class="form-check-label" for="flexCheckDefault">
-        Default checkbox
+        Gin
       </label>
     </div>
     <div class="form-check">
@@ -282,7 +403,19 @@
         Checked checkbox
       </label>
     </div>
-    <div id="map" class="map"></div>
+    
+
+
+      <script type="text/javascript" src="./js assets/search.marker.js"></script>
+      <script type="text/javascript" src="./js assets/search-results-parser.js"></script>
+      <script type="text/javascript" src="./js assets/search-markers-manager.js"></script>
+      <script type="text/javascript" src="./info-hint.js"></script>
+      <script type="text/javascript" src="./js assets/mobile-or-tablet.js"></script>
+      <script type="text/javascript" src="./js assets/results-manager.js"></script>
+      <script type="text/javascript" src="./js assets/side-panel.js"></script>
+      <script type="text/javascript" src="./js assets/dom-helpers.js"></script>
+      <script type="text/javascript" src="./js assets/formatter.js"></script>
+   
 
     <!-- End of Checks -->
     <!-- Footer Section -->
@@ -331,9 +464,11 @@
     <!-- End of Loading Spinner -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/script1.js"></script>
-    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.1.3-public-preview.0/SearchBox-web.js"></script>
-
     <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.1.3-public-preview.0/SearchBox-web.js"></script>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.1.2-public-preview.15/services/services-web.min.js"></script>
+
+    
     <script src="./assets/script.js"></script>
 
   </body>
