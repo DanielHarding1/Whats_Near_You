@@ -1,8 +1,53 @@
+:root {
+  padding: 10px;
+  margin: auto;
+}
+
 body {
   width: 100%;
+  background-color: black;
 }
 
 #map {
-  width: 20vh;
-  height: 20vh;
+  width: 40vh;
+  height: 40vh;
+  margin-left: 0px;
+}
+
+#navbar-logo {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.section2 {
+  width: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid yellow;
+  border-radius: 20px;
+}
+
+.section3 {
+  width: 100vh;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid yellow;
+  border-radius: 20px;
+}
+ 
+.card-image {
+  min-height: 300px;
+  min-width: 100%;
+}
+
+.logo-gif {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.logo.png {
+  max-width: 200px;
+  max-height: 200px;
 }
