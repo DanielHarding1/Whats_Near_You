@@ -7,6 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
     zoom: 3,
   });
 
+  var infoHint = new InfoHint("info", "bottom-center", 5000).addTo(
+    document.getElementById("map")
+  );
+  var errorHint = new InfoHint("error", "bottom-center", 5000).addTo(
+    document.getElementById("map")
+  );
+
   // Options for the fuzzySearch service
   var searchOptions = {
     key: "qyRVte5GUbZjU2y2Z9LftPqp8OBwVPoa",
@@ -35,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     userLocation: null,
   };
   map.addControl(
-    new tt.FullscreenControl({ container: document.querySelector(".map") })
+    new tt.FullscreenControl({ container: document.getElementById("map") })
   );
   map.addControl(new tt.NavigationControl());
 
@@ -76,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     ttSearchBox.updateOptions(
       Object.assign({}, searchBoxOptions, {
-        placeholder: "London Cocktail Bars",
+        placeholder: " eg. London Cocktail Bars",
         searchOptions: newSearchOptions,
         autocompleteOptions: newAutocompleteOptions,
         distanceFromPoint: state.userLocation,
@@ -184,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function () {
       filter = { brandSet: event.data.result.value };
     }
     var options = Object.assign({}, commonOptions, filter);
-    infoHint.setMessage("Loading results...");
+
     errorHint.hide();
     resultsManager.loading();
     tt.services

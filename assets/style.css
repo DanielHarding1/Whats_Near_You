@@ -52,10 +52,10 @@ body {
   max-height: 200px;
 }
 #map {
-  width: 50vh;
-  height: 50vh;
+  width: 80vh;
+  height: 80vh;
 }
 .tt-search-box {
-  width: 50vh;
+  width: 80vh;
   height: 5vh;
 }
