@@ -57,6 +57,8 @@ $("#ingredient-submit").on("click", function (event) {
   var ingredient = $("#ingredient").val();
   console.log(ingredient);
 
+  var APIKey = "1";
+
   var ingredientQueryURL =
     "https://thecocktaildb.com/api/json/v1/1/filter.php?i=" +
     ingredient +
