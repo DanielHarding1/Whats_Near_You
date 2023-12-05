@@ -1,7 +1,6 @@
 var APIKey = "1";
 
 // Searches for a cocktail by name
-// To Do: How Do I Locate the information?
 // To Do: Set the cocktail image as the background
 $("#cocktail-submit").on("click", function (event) {
   event.preventDefault();
@@ -30,8 +29,22 @@ $("#cocktail-submit").on("click", function (event) {
 
 function displayCocktail(data) {
   console.log(data);
-  $("#cocktailName").text(data.drinks[0].strDrink);
+  $("#cocktailName").text("Cocktail: " + data.drinks[0].strDrink);
   $("#cocktailIngredients").text(data.drinks[0].strIngredient1);
+  $("#ingredient2").text(data.drinks[0].strIngredient2);
+  $("#ingredient3").text(data.drinks[0].strIngredient3);
+  $("#ingredient4").text(data.drinks[0].strIngredient4);
+  $("#ingredient5").text(data.drinks[0].strIngredient5);
+  $("#ingredient6").text(data.drinks[0].strIngredient6);
+  $("#ingredient7").text(data.drinks[0].strIngredient7);
+  $("#ingredient8").text(data.drinks[0].strIngredient8);
+  $("#ingredient9").text(data.drinks[0].strIngredient9);
+  $("#ingredient10").text(data.drinks[0].strIngredient10);
+  $("#ingredient11").text(data.drinks[0].strIngredient11);
+  $("#ingredient12").text(data.drinks[0].strIngredient12);
+  $("#ingredient13").text(data.drinks[0].strIngredient13);
+  $("#ingredient14").text(data.drinks[0].strIngredient14);
+  $("#ingredient15").text(data.drinks[0].strIngredient15);
   $("#cocktailInstructions").text(data.drinks[0].strInstructions);
 }
 
@@ -48,10 +61,26 @@ function createButton(drinks) {
 function cocktailFinder(s) {
   var search = s.target.textContent;
   console.log(search);
+
+  var cocktailSearchURL =
+    "https://thecocktaildb.com/api/json/v1/1/search.php?s=" +
+    search +
+    "&appid=" +
+    APIKey;
+  console.log(cocktailSearchURL);
+
+  fetch(cocktailSearchURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+      displayCocktail(data);
+      $("#cocktail").text(JSON.stringify(data));
+    });
 }
 
-// Searches for cocktail by user input
-// TO DO: Create a list of the drinks that could be made and then using their 'idDrink' search through this API : www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007 to find the cocktail name, ingredients and instructions
+// Searches for cocktail by user input of ingredient
 $("#ingredient-submit").on("click", function (event) {
   event.preventDefault();
   var ingredient = $("#ingredient").val();
@@ -98,5 +127,25 @@ $("#selection-submit").on("click", function (event) {
     })
     .then(function (data) {
       console.log(data);
+      displayCocktail(data);
+      createButton(data.drinks);
+      $("#cocktail").text(JSON.stringify(data));
     });
 });
+
+function createButton(drinks) {
+  $("#drinks-view").empty();
+  for (var i = 0; i < drinks.length; i++) {
+    var a = $("<button>");
+    a.text(drinks[i].strDrink);
+    $("#drinks-view").append(a);
+    a.on("click", cocktailFinder);
+  }
+}
+
+// .then(function (data) {
+//   console.log(data);
+//   displayCocktail(data);
+//   createButton(data.drinks);
+//   $("#cocktail").text(JSON.stringify(data));
+// });
