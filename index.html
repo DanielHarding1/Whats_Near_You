@@ -12,7 +12,6 @@
   </head>
   <body>
     <!-- Replace version in the URL with desired library version -->
-    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
     <script src="./assets/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -78,15 +77,16 @@
             <input
               class="form-control me-2"
               type="text"
-              placeholder="Search"
+              id="cocktail"
+              placeholder="Enter Cocktail"
               aria-label="Search"
             />
             <button
               class="btn btn-outline-success"
               type="submit"
-              id="submit"
+              id="cocktail-submit"
             >
-              Search for a Cocktail
+              Search 
           </button>
             
           </form>
@@ -149,33 +149,170 @@
     <section id="section2" class="section2">
       <!-- card image 1 -->
       <div class="card text-bg-dark card-image">
-        <img src="assets/images/diy-cocktails.jpg" class="card-img" alt="photo showing a range of DIY cocktail mixes" />
+        <!-- <img src="assets/images/diy-cocktails.jpg" class="card-img" alt="photo showing a range of DIY cocktail mixes" /> -->
         <div class="card-img-overlay">
           <h5 class="card-title">Choose Your Cocktail!</h5>
           <p class="card-text">
-            Enter your ingredients below to create a mixer designed for you!
+            Search for one ingredient below to find your perfect cocktail!
           </p>
+          <!-- Search Bar -->
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  id="ingredient"
+                  type="text"
+                  placeholder="Enter Ingredient"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit" id="ingredient-submit">Search</button>
+              </form>
+            </div>
+          </nav> 
+    <!-- End of Search Bar -->
           <p class="card-text"><small>Last updated 3 mins ago</small></p>
+    <!-- search for a specific ingredient -->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            id="ingredient"
+            type="text"
+            placeholder="Enter Ingredient"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit" id="ingredient-submit">Search</button>
+        </form>
+      </div>
+    </nav> 
+        <p>Select an ingredient below to find your perfect cocktail!</p>
+        <div id="drinks-view"></div>
+      <!-- Move This Button To The End Of Selections When The Box Is Bigger -->
+        <button class="btn btn-outline-success" type="submit" id="selection-submit">Search</button>
+        <form id="alcoholSelect">
+        <input type="radio" name="selection" value="Ale"/>
+        <label>Ale</label>
+        <input type="radio" name="selection" value="Amaretto"/>
+        <label>Amaretto</label>
+        <input type="radio" name="selection" value ="AppleJack"/>
+        <label>Applejack</label>
+        <input type="radio" name="selection" value ="Bitters"/>
+        <label>Bitters</label>
+        <input type="radio" name="selection" value ="Orange bitters"/>
+        <label>Bitters (Orange)</label>
+        <input type="radio" name="selection" value ="Bourbon"/>
+        <label>Bourbon</label>
+        <input type="radio" name="selection" value ="Brandy"/>
+        <label>Brandy</label>
+        <input type="radio" name="selection" value ="Apple brandy"/>
+        <label>Brandy (Apple)</label>
+        <input type="radio" name="selection" value ="Apricot brandy"/>
+        <label>Brandy (Apricot)</label>
+        <input type="radio" name="selection" value ="Blackberry brandy"/>
+        <label>Brandy (Blackberry)</label>
+        <input type="radio" name="selection" value ="Cherry brandy"/>
+        <label>Brandy (Cherry)</label>
+        <input type="radio" name="selection" value ="Coffee brandy"/>
+        <label>Brandy (Coffee)</label>
+        <input type="radio" name="selection" value ="Champagne"/>
+        <label>Champagne</label>
+        <input type="radio" name="selection" value ="Cider"/>
+        <label>Cider</label>
+        <input type="radio" name="selection" value ="Creme de Cassis"/>
+        <label>Creme de Cassis</label>
+        <input type="radio" name="selection" value ="Dubonnet Rouge"/>
+        <label>Dubonnet Rouge</label>
+        <input type="radio" name="selection" value ="Gin"/>
+        <label>Gin</label>
+        <input type="radio" name="selection" value ="Irish Cream"/>
+        <label>Irish Cream</label>
+        <input type="radio" name="selection" value ="Johnnie Walker"/>
+        <label>Johnnie Walker</label>
+        <input type="radio" name="selection" value ="Kahlua"/>
+        <label>Kahlua</label>
+        <input type="radio" name="selection" value ="Lager"/>
+        <label>Lager</label>
+        <input type="radio" name="selection" value ="Chocolate liqueur"/>
+        <label>Liqueur(Chocolate)</label>
+        <input type="radio" name="selection" value ="Midori melon liqueur"/>
+        <label>Liqueur (Midori Melon)</label>
+        <input type="radio" name="selection" value ="Ouzo"/>
+        <label>Ouzo</label>
+        <input type="radio" name="selection" value ="Port"/>
+        <label>Port</label>
+        <input type="radio" name="selection" value ="Rum"/>
+        <label>Rum</label>
+        <input type="radio" name="selection" value ="Dark rum"/>
+        <label>Rum (Dark)</label>
+        <input type="radio" name="selection" value ="Light rum"/>
+        <label>Rum (Light)</label>
+        <input type="radio" name="selection" value ="Sambuca"/>
+        <label>Sambuca</label>
+        <input type="radio" name="selection" value ="Peppermint schnapps"/>
+        <label>Schnapps (Peppermint)</label>
+        <input type="radio" name="selection" value ="Strawberry schnapps"/>
+        <label>Schnapps (Strawberry)</label>
+        <input type="radio" name="selection" value ="Scotch"/>
+        <label>Scotch</label>
+        <input type="radio" name="selection" value ="Southern Comfort"/>
+        <label>Southern Comfort</label>
+        <input type="radio" name="selection" value ="Tequila"/>
+        <label>Tequila</label>
+        <input type="radio" name="selection" value ="Triple Sec"/>
+        <label>Triple Sec</label>
+        <input type="radio" name="selection" value ="Dry Vermouth"/>
+        <label>Vermouth (Dry)</label>
+        <input type="radio" name="selection" value ="Sweet Vermouth"/>
+        <label>Vermouth (Sweet)</label>
+        <input type="radio" name="selection" value ="Vodka"/>
+        <label>Vodka</label>
+        <input type="radio" name="selection" value ="Lemon vodka"/>
+        <label>Vodka (Lemon)</label>
+        <input type="radio" name="selection" value ="Whiskey"/>
+        <label>Whiskey</label>
+        <input type="radio" name="selection" value ="Blended whiskey"/>
+        <label>Whiskey (Blended)</label>
+        <input type="radio" name="selection" value ="Irish whiskey"/>
+        <label>Whiskey (Irish)</label>
+        <input type="radio" name="selection" value ="Red wine"/>
+        <label>Wine (Red)</label>
+      </form>
         </div>
       </div>
       <!-- card image 2 -->
-      <div class="card text-bg-dark card-image">
-        <img src="assets/images/logo-gif.gif" class="card-img logo-gif" alt="..." />
+      <div class="card text-bg-dark card-image" id="cocktailImage"> 
         <div class="card-img-overlay">
-          <h5 class="card-title">Editable Text</h5>
-          <p class="card-text">
-            Cocktail Formation to be dynamically replaced with JS in the DOM.
-          </p>
-          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+          <h5 class="card-title">Your Cocktail</h5>
+          <h6 class="card-text" id="cocktailName">Cocktail:</h6>
+          <h6>Ingredients:</h6>
+          <div id="cocktailIngredients"></div>
+          <div id=ingredient2></div>
+          <div id=ingredient3></div>
+          <div id=ingredient4></div>
+          <div id=ingredient5></div>
+          <div id=ingredient6></div>
+          <div id=ingredient7></div>
+          <div id=ingredient8></div>
+          <div id=ingredient9></div>
+          <div id=ingredient10></div>
+          <div id=ingredient11></div>
+          <div id=ingredient12></div>
+          <div id=ingredient13></div>
+          <div id=ingredient14></div>
+          <div id=ingredient15></div>
+          <h6>Instructions:</h6>
+          <div id="cocktailInstructions"></div>
         </div>
-      </div>
+     </div>
     </section>
     <!-- End of Section 2: Cocktails-->
     <!-- Section 3: Location -->
     <section id="section3" class="section3">
       <!-- card image 1 -->
       <div class="card text-bg-dark card-image">
-        <img src="assets/images/logo-png.png" class="card-img" alt="..." />
+        <img src="assets/images/logo-png.png" id="location-image" class="card-img" alt="..." />
         <div class="card-img-overlay">
           <h5 class="card-title">Enter Your Location</h5>
             <!-- Location Form -->
@@ -233,45 +370,106 @@
       </div>
       <!-- card image 2 -->
       <div class="card text-bg-dark card-image" id="map-card">
-        <img src="..." class="card-img" alt="..." />
+        
         <div class="card-img-overlay">
-          <h5 class="card-title">MAP VIEW</h5>
-          <div id="map" class="map"></div>
-
-          <p class="card-text">
-            Click and drag to move around the map!
-          </p>
-          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+          <h5 class="card-title"></h5>
+          <div class="map-view">
+            <div class="tt-side-panel">
+              <header class="tt-side-panel__header"></header>
+              <div class="tt-tabs js-tabs">
+                <div class="tt-tabs__panel">
+                  <div class="js-results" hidden="hidden"></div>
+                  <div class="js-results-loader" hidden="hidden">
+                    <div class="loader-center"><span class="loader"></span></div>
+                  </div>
+                  <div class="tt-tabs__placeholder js-results-placeholder"></div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div id="map" class="full-map"></div>
+          </div>
         </div>
-      </div>
+       
+
+          
+      
     </section>
     <!-- End of Section 3: Location -->
-    <!-- Search Bar -->
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            id="ingredient"
-            type="text"
-            placeholder="Enter Ingredient"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit" id="ingredient-submit">Search</button>
-        </form>
-      </div>
-    </nav> 
-    <!-- End of Search Bar -->
     <!-- Check Box section -->
     <div class="form-check hide">
 
         Checked checkbox
       </label>
     </div>
+<!-- 
+    <div id="map" class="map"></div> -->
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="flexCheckDefault"
+      />
+      <label class="form-check-label" for="flexCheckDefault">
+        Gin
+      </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="flexCheckChecked"
+        checked
+      />
+      <label class="form-check-label" for="flexCheckChecked">
+        Checked checkbox
+      </label>
+    </div>
+    
 
-    <div id="map" class="map"></div>
+
 
     <!-- End of Checks -->
+    <!-- Footer Section -->
+    <div class="card-group">
+      <!-- Links -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <!-- End of Links -->
+      <!-- Photo -->
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <!-- End of Photo -->
+      <!-- About/Bio -->
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <!-- End of About/Bio -->
+    </div>
+    <!-- End of Footer section -->
     <!-- Loading Spinner -->
     <div class="spinner-border hide" role="status">
       <span class="visually-hidden">Loading...</span>
@@ -282,9 +480,20 @@
     <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/script1.js"></script>
-    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.1.3-public-preview.0/SearchBox-web.js"></script>
-
     <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.1.3-public-preview.0/SearchBox-web.js"></script>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.1.2-public-preview.15/services/services-web.min.js"></script>
+    <script type="text/javascript" src="./js assets/search.marker.js"></script>
+    <script type="text/javascript" src="./js assets/search-results-parser.js"></script>
+    <script type="text/javascript" src="./js assets/search-markers-manager.js"></script>
+    <script type="text/javascript" src="./info-hint.js"></script>
+    <script type="text/javascript" src="./js assets/mobile-or-tablet.js"></script>
+    <script type="text/javascript" src="./js assets/results-manager.js"></script>
+    <script type="text/javascript" src="./js assets/side-panel.js"></script>
+    <script type="text/javascript" src="./js assets/dom-helpers.js"></script>
+    <script type="text/javascript" src="./js assets/formatter.js"></script>
+ 
+    
     <script src="./assets/script.js"></script>
 
   </body>

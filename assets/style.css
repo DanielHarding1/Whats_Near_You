@@ -21,7 +21,7 @@ body {
 
 .section2 {
   width: 100vh;
-  height: auto;
+  height: 500px;
   display: flex;
   flex-direction: row;
   border: 2px solid yellow;
@@ -30,11 +30,16 @@ body {
 
 .section3 {
   width: 100vh;
-  height: 400px;
+  height: 600px;
   display: flex;
   flex-direction: row;
   border: 2px solid yellow;
   border-radius: 20px;
+}
+
+#location-image {
+  max-width: 400px;
+  max-height: 400px;
 }
  
 .card-image {
@@ -50,4 +55,18 @@ body {
 .logo.png {
   max-width: 200px;
   max-height: 200px;
+}
+
+.hide {
+  display: none;
+}
+
+#map {
+  width: 50vh;
+  height: 50vh;
+}
+
+.tt-search-box {
+  width: 50vh;
+  height: 5vh;
 }
