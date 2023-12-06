@@ -1,6 +1,6 @@
 :root {
   padding: 10px;
-  margin: auto;
+  margin: 10px;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 
 .section2 {
   width: 100vh;
-  height: 500px;
+  height: 800px;
   display: flex;
   flex-direction: row;
   border: 2px solid yellow;
@@ -30,7 +30,7 @@ body {
 
 .section3 {
   width: 100vh;
-  height: 600px;
+  height: 800px;
   display: flex;
   flex-direction: row;
   border: 2px solid yellow;
