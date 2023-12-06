@@ -1,57 +1,21 @@
 <!DOCTYPE html>
 <html class="use-all-space">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta charset="UTF-8" />
-    <title>Cocktails with Friends</title>
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
-    />
-
-  </head>
-  <body>
-    <!-- Replace version in the URL with desired library version -->
-    <script src="./assets/script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps.css"
-    />
-
-    <title>What's Near You?</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.1.3-public-preview.0/SearchBox.css"
-  />
+    <title>Cocktails Near You</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1, user-scalable=no"/>
+    <link href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.1.3-public-preview.0/SearchBox.css"/>
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
-  </head>
+  </head>    
   <body>
     <!-- Nav Bar -->
     <nav id="header-menu" class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img
-            src="assets/images/logo-png.png"
-            id="navbar-logo"
-            class="logo-gif"
-          />What's Near You?</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand" href="#"><img src="assets/images/logo-png.png" id="navbar-logo" class="logo-gif"/>What's Near You?</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" ia-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -60,32 +24,17 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Create Your Cocktail</a
-              >
+              <a class="nav-link active" aria-current="page" href="#">Create Your Cocktail</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Cocktails Near You</a
-              >
+              <a class="nav-link active" aria-current="page" href="#">Cocktails Near You</a>
             </li>
           </ul>
+        </div>
+        <div>
           <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="text"
-              id="cocktail"
-              placeholder="Enter Cocktail"
-              aria-label="Search"
-            />
-            <button
-              class="btn btn-outline-success"
-              type="submit"
-              id="cocktail-submit"
-            >
-              Search 
-          </button>
-            
+            <input class="form-control me-2" type="text" id="cocktail" placeholder="Enter Cocktail" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit" id="cocktail-submit">Search</button>
           </form>
         </div>
       </div>
@@ -93,37 +42,20 @@
     <!-- End of NavBar -->
     <!-- ---------------- -->
     <!-- Page Section 1: Slideshow -->
-    <div id="slideshow">
+    <section id="slideshow">
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img
-              src="assets/images/cocktails.jpg"
-              class="d-block w-100"
-              alt="a picture of multiple cocktails in various colours and sizes"
-            />
+            <img src="assets/images/cocktails.jpg" class="d-block w-100" alt="a picture of multiple cocktails in various colours and sizes"/>
           </div>
           <div class="carousel-item">
-            <img
-              src="assets/images/diy-cocktails.jpg"
-              class="d-block w-100"
-              alt="a picture of six DIY cocktail combo ideas"
-            />
+            <img src="assets/images/diy-cocktails.jpg" class="d-block w-100" alt="a picture of six DIY cocktail combo ideas" />
           </div>
           <div class="carousel-item">
-            <img
-              src="assets/images/wallpaper-cocktails.jpg"
-              class="d-block w-100"
-              alt="a range of cocktails arranged in a wallpaper like style on a yellow background"
-            />
+            <img src="assets/images/wallpaper-cocktails.jpg" class="d-block w-100" alt="a range of cocktails arranged in a wallpaper like style on a yellow background"/>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
@@ -131,13 +63,12 @@
           class="carousel-control-next"
           type="button"
           data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
+          data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
+    </section>
     <!-- End of Slideshow -->
     <!-- ---------------- -->
     <!-- Section 2: Cocktails -->
@@ -150,42 +81,12 @@
           <p class="card-text">
             Search for one ingredient below to find your perfect cocktail!
           </p>
-          <!-- Search Bar -->
-          <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  id="ingredient"
-                  type="text"
-                  placeholder="Enter Ingredient"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit" id="ingredient-submit">Search</button>
-              </form>
-            </div>
-          </nav> 
-    <!-- End of Search Bar -->
           <p class="card-text"><small>Last updated 3 mins ago</small></p>
-    <!-- search for a specific ingredient -->
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            id="ingredient"
-            type="text"
-            placeholder="Enter Ingredient"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit" id="ingredient-submit">Search</button>
-        </form>
-      </div>
-    </nav> 
+        <!-- Search for Cocktail -->
         <p>Select an ingredient below to find your perfect cocktail!</p>
         <div id="drinks-view"></div>
-      <!-- Move This Button To The End Of Selections When The Box Is Bigger -->
-        <button class="btn btn-outline-success" type="submit" id="selection-submit">Search</button>
+        <!-- Move This Button To The End Of Selections When The Box Is Bigger -->
+        
         <form id="alcoholSelect">
         <input type="radio" name="selection" value="Ale"/>
         <label>Ale</label>
@@ -273,7 +174,7 @@
         <label>Whiskey (Irish)</label>
         <input type="radio" name="selection" value ="Red wine"/>
         <label>Wine (Red)</label>
-      </form>
+      <button class="btn btn-outline-success" type="submit" id="selection-submit">Search</button>
         </div>
       </div>
       <!-- card image 2 -->
@@ -327,12 +228,6 @@
         </div>
       </div>
     </div>
-
-
-
-    
-   
-    <!-- End of Footer section -->
     <!-- Loading Spinner -->
     <div class="spinner-border hide" role="status">
       <span class="visually-hidden">Loading...</span>
@@ -344,8 +239,6 @@
     <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
     <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.1.3-public-preview.0/SearchBox-web.js"></script>
     <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.1.2-public-preview.15/services/services-web.min.js"></script>
-
-
     <script type="text/javascript" src="./js assets/search.marker.js"></script>
     <script type="text/javascript" src="./js assets/search-results-parser.js"></script>
     <script type="text/javascript" src="./js assets/search-markers-manager.js"></script>
@@ -355,9 +248,7 @@
     <script type="text/javascript" src="./js assets/side-panel.js"></script>
     <script type="text/javascript" src="./js assets/dom-helpers.js"></script>
     <script type="text/javascript" src="./js assets/formatter.js"></script>
-    
     <script src="./assets/script.js"></script>
-
   </body>
 </html>
 
