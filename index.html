@@ -78,104 +78,112 @@
         <!-- <img src="assets/images/diy-cocktails.jpg" class="card-img" alt="photo showing a range of DIY cocktail mixes" /> -->
         <div class="card-img-overlay">
           <h5 class="card-title">Choose Your Cocktail!</h5>
-          <p class="card-text">
-            Search for one ingredient below to find your perfect cocktail!
-          </p>
-          <p class="card-text"><small>Last updated 3 mins ago</small></p>
         <!-- Search for Cocktail -->
         <p>Select an ingredient below to find your perfect cocktail!</p>
-        <div id="drinks-view"></div>
-        <!-- Move This Button To The End Of Selections When The Box Is Bigger -->
         
+        <div id="drinks-view"></div>
         <form id="alcoholSelect">
-        <input type="radio" name="selection" value="Ale"/>
-        <label>Ale</label>
-        <input type="radio" name="selection" value="Amaretto"/>
-        <label>Amaretto</label>
-        <input type="radio" name="selection" value ="AppleJack"/>
-        <label>Applejack</label>
-        <input type="radio" name="selection" value ="Bitters"/>
-        <label>Bitters</label>
-        <input type="radio" name="selection" value ="Orange bitters"/>
-        <label>Bitters (Orange)</label>
-        <input type="radio" name="selection" value ="Bourbon"/>
-        <label>Bourbon</label>
-        <input type="radio" name="selection" value ="Brandy"/>
-        <label>Brandy</label>
-        <input type="radio" name="selection" value ="Apple brandy"/>
-        <label>Brandy (Apple)</label>
-        <input type="radio" name="selection" value ="Apricot brandy"/>
-        <label>Brandy (Apricot)</label>
-        <input type="radio" name="selection" value ="Blackberry brandy"/>
-        <label>Brandy (Blackberry)</label>
-        <input type="radio" name="selection" value ="Cherry brandy"/>
-        <label>Brandy (Cherry)</label>
-        <input type="radio" name="selection" value ="Coffee brandy"/>
-        <label>Brandy (Coffee)</label>
-        <input type="radio" name="selection" value ="Champagne"/>
-        <label>Champagne</label>
-        <input type="radio" name="selection" value ="Cider"/>
-        <label>Cider</label>
-        <input type="radio" name="selection" value ="Creme de Cassis"/>
-        <label>Creme de Cassis</label>
-        <input type="radio" name="selection" value ="Dubonnet Rouge"/>
-        <label>Dubonnet Rouge</label>
-        <input type="radio" name="selection" value ="Gin"/>
-        <label>Gin</label>
-        <input type="radio" name="selection" value ="Irish Cream"/>
-        <label>Irish Cream</label>
-        <input type="radio" name="selection" value ="Johnnie Walker"/>
-        <label>Johnnie Walker</label>
-        <input type="radio" name="selection" value ="Kahlua"/>
-        <label>Kahlua</label>
-        <input type="radio" name="selection" value ="Lager"/>
-        <label>Lager</label>
-        <input type="radio" name="selection" value ="Chocolate liqueur"/>
-        <label>Liqueur(Chocolate)</label>
-        <input type="radio" name="selection" value ="Midori melon liqueur"/>
-        <label>Liqueur (Midori Melon)</label>
-        <input type="radio" name="selection" value ="Ouzo"/>
-        <label>Ouzo</label>
-        <input type="radio" name="selection" value ="Port"/>
-        <label>Port</label>
-        <input type="radio" name="selection" value ="Rum"/>
-        <label>Rum</label>
-        <input type="radio" name="selection" value ="Dark rum"/>
-        <label>Rum (Dark)</label>
-        <input type="radio" name="selection" value ="Light rum"/>
-        <label>Rum (Light)</label>
-        <input type="radio" name="selection" value ="Sambuca"/>
-        <label>Sambuca</label>
-        <input type="radio" name="selection" value ="Peppermint schnapps"/>
-        <label>Schnapps (Peppermint)</label>
-        <input type="radio" name="selection" value ="Strawberry schnapps"/>
-        <label>Schnapps (Strawberry)</label>
-        <input type="radio" name="selection" value ="Scotch"/>
-        <label>Scotch</label>
-        <input type="radio" name="selection" value ="Southern Comfort"/>
-        <label>Southern Comfort</label>
-        <input type="radio" name="selection" value ="Tequila"/>
-        <label>Tequila</label>
-        <input type="radio" name="selection" value ="Triple Sec"/>
-        <label>Triple Sec</label>
-        <input type="radio" name="selection" value ="Dry Vermouth"/>
-        <label>Vermouth (Dry)</label>
-        <input type="radio" name="selection" value ="Sweet Vermouth"/>
-        <label>Vermouth (Sweet)</label>
-        <input type="radio" name="selection" value ="Vodka"/>
-        <label>Vodka</label>
-        <input type="radio" name="selection" value ="Lemon vodka"/>
-        <label>Vodka (Lemon)</label>
-        <input type="radio" name="selection" value ="Whiskey"/>
-        <label>Whiskey</label>
-        <input type="radio" name="selection" value ="Blended whiskey"/>
-        <label>Whiskey (Blended)</label>
-        <input type="radio" name="selection" value ="Irish whiskey"/>
-        <label>Whiskey (Irish)</label>
-        <input type="radio" name="selection" value ="Red wine"/>
-        <label>Wine (Red)</label>
+        <list id="flex">
+        <div id="listOne">
+        <li><input type="radio" name="selection" value="Ale"/>
+        <label>Ale</label></li>
+        <li><input type="radio" name="selection" value="Amaretto"/>
+        <label>Amaretto</label></li>
+        <li><input type="radio" name="selection" value ="AppleJack"/>
+        <label>Applejack</label></li>
+        <li><input type="radio" name="selection" value ="Bitters"/>
+        <label>Bitters</label></li>
+        <li><input type="radio" name="selection" value ="Orange bitters"/>
+        <label>Bitters (Orange)</label></li>
+        <li><input type="radio" name="selection" value ="Bourbon"/>
+        <label>Bourbon</label></li>
+        <li><input type="radio" name="selection" value ="Brandy"/>
+        <label>Brandy</label></li>
+        <li><input type="radio" name="selection" value ="Apple brandy"/>
+        <label>Brandy (Apple)</label></li>
+        <li><input type="radio" name="selection" value ="Apricot brandy"/>
+        <label>Brandy (Apricot)</label></li>
+        <li><input type="radio" name="selection" value ="Blackberry brandy"/>
+        <label>Brandy (Blackberry)</label></li>
+      </div>
+      <div id="listTwo">
+        <li><input type="radio" name="selection" value ="Cherry brandy"/>
+        <label>Brandy (Cherry)</label></li>
+        <li><input type="radio" name="selection" value ="Coffee brandy"/>
+        <label>Brandy (Coffee)</label></li>
+        <li><input type="radio" name="selection" value ="Champagne"/>
+        <label>Champagne</label></li>
+        <li><input type="radio" name="selection" value ="Cider"/>
+        <label>Cider</label></li>
+        <li><input type="radio" name="selection" value ="Creme de Cassis"/>
+        <label>Creme de Cassis</label></li>
+        <li><input type="radio" name="selection" value ="Dubonnet Rouge"/>
+        <label>Dubonnet Rouge</label></li>
+        <li><input type="radio" name="selection" value ="Gin"/>
+        <label>Gin</label></li>
+        <li><input type="radio" name="selection" value ="Irish Cream"/>
+        <label>Irish Cream</label></li>
+        <li><input type="radio" name="selection" value ="Johnnie Walker"/>
+        <label>Johnnie Walker</label></li>
+        <li><input type="radio" name="selection" value ="Kahlua"/>
+        <label>Kahlua</label></li>
+        </div>
+        <div id="listThree">
+        <li><input type="radio" name="selection" value ="Lager"/>
+        <label>Lager</label></li>
+        <li><input type="radio" name="selection" value ="Chocolate liqueur"/>
+        <label>Liqueur(Chocolate)</label></li>
+        <li><input type="radio" name="selection" value ="Midori melon liqueur"/>
+        <label>Liqueur (Midori Melon)</label></li>
+        <li><input type="radio" name="selection" value ="Ouzo"/>
+        <label>Ouzo</label></li>
+        <li><input type="radio" name="selection" value ="Port"/>
+        <label>Port</label></li>
+        <li><input type="radio" name="selection" value ="Rum"/>
+        <label>Rum</label></li>
+        <li><input type="radio" name="selection" value ="Dark rum"/>
+        <label>Rum (Dark)</label></li>
+        <li><input type="radio" name="selection" value ="Light rum"/>
+        <label>Rum (Light)</label></li>
+        <li><input type="radio" name="selection" value ="Sambuca"/>
+        <label>Sambuca</label></li>
+        <li><input type="radio" name="selection" value ="Peppermint schnapps"/>
+        <label>Schnapps (Peppermint)</label></li>
+        </div>
+        <div id="listFour">
+        <li><input type="radio" name="selection" value ="Strawberry schnapps"/>
+        <label>Schnapps (Strawberry)</label></li>
+        <li><input type="radio" name="selection" value ="Scotch"/>
+        <label>Scotch</label></li>
+        <li><input type="radio" name="selection" value ="Southern Comfort"/>
+        <label>Southern Comfort</label></li>
+        <li><input type="radio" name="selection" value ="Tequila"/>
+        <label>Tequila</label></li>
+        <li><input type="radio" name="selection" value ="Triple Sec"/>
+        <label>Triple Sec</label></li>
+        <li><input type="radio" name="selection" value ="Dry Vermouth"/>
+        <label>Vermouth (Dry)</label></li>
+        <li><input type="radio" name="selection" value ="Sweet Vermouth"/>
+        <label>Vermouth (Sweet)</label></li>
+        <li><input type="radio" name="selection" value ="Vodka"/>
+        <label>Vodka</label></li>
+        <li><input type="radio" name="selection" value ="Lemon vodka"/>
+        <label>Vodka (Lemon)</label></li>
+        <li><input type="radio" name="selection" value ="Whiskey"/>
+        <label>Whiskey</label></li>
+        </div>
+        <div id="listFive">
+        <li><input type="radio" name="selection" value ="Blended whiskey"/>
+        <label>Whiskey (Blended)</label></li>
+        <li><input type="radio" name="selection" value ="Irish whiskey"/>
+        <label>Whiskey (Irish)</label></li>
+        <li><input type="radio" name="selection" value ="Red wine"/>
+        <label>Wine (Red)</label></li>
+      
+      </list>
       <button class="btn btn-outline-success" type="submit" id="selection-submit">Search</button>
         </div>
+      </div>
       </div>
       <!-- card image 2 -->
       <div class="card text-bg-dark card-image" id="cocktailImage"> 

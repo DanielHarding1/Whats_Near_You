@@ -70,3 +70,18 @@ body {
   width: 50vh;
   height: 5vh;
 }
+
+li {
+  list-style-type: none;
+}
+
+#flex {
+  display: flex; 
+  flex-direction: ; 
+}
+
+#listOne, #listTwo, #listThree, #listFour, #listFive { 
+  width: 20%; 
+  text-align: left; 
+  color: white; 
+} 
