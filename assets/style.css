@@ -34,7 +34,7 @@ body {
 /* .card-image {
   min-height: 300px;
   min-width: 100%;
-} */
+}
 
 .logo-gif {
   max-width: 400px;
@@ -45,10 +45,10 @@ body {
   max-width: 200px;
   max-height: 200px;
 }
-/* #map {
-  width: 80vw;
-  height: 80vh;
-} */
+#map {
+  width: 50vh;
+  height: 50vh;
+}
 .tt-search-box {
   width: 80vw;
   height: 5vh;
