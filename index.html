@@ -81,42 +81,12 @@
           <p class="card-text">
             Search for one ingredient below to find your perfect cocktail!
           </p>
-          <!-- Search Bar -->
-          <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  id="ingredient"
-                  type="text"
-                  placeholder="Enter Ingredient"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit" id="ingredient-submit">Search</button>
-              </form>
-            </div>
-          </nav> 
-    <!-- End of Search Bar -->
           <p class="card-text"><small>Last updated 3 mins ago</small></p>
-    <!-- search for a specific ingredient -->
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            id="ingredient"
-            type="text"
-            placeholder="Enter Ingredient"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit" id="ingredient-submit">Search</button>
-        </form>
-      </div>
-    </nav> 
+        <!-- Search for Cocktail -->
         <p>Select an ingredient below to find your perfect cocktail!</p>
         <div id="drinks-view"></div>
-      <!-- Move This Button To The End Of Selections When The Box Is Bigger -->
-        <button class="btn btn-outline-success" type="submit" id="selection-submit">Search</button>
+        <!-- Move This Button To The End Of Selections When The Box Is Bigger -->
+        
         <form id="alcoholSelect">
         <input type="radio" name="selection" value="Ale"/>
         <label>Ale</label>
@@ -204,7 +174,7 @@
         <label>Whiskey (Irish)</label>
         <input type="radio" name="selection" value ="Red wine"/>
         <label>Wine (Red)</label>
-      </form>
+      <button class="btn btn-outline-success" type="submit" id="selection-submit">Search</button>
         </div>
       </div>
       <!-- card image 2 -->
