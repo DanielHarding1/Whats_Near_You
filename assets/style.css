@@ -8,12 +8,6 @@ body {
   background-color: black;
 }
 
-#map {
-  width: 40vh;
-  height: 40vh;
-  margin-left: 0px;
-}
-
 #navbar-logo {
   max-width: 80px;
   max-height: 80px;
@@ -41,7 +35,7 @@ body {
   max-width: 400px;
   max-height: 400px;
 }
- 
+
 .card-image {
   min-height: 300px;
   min-width: 100%;
@@ -62,11 +56,11 @@ body {
 }
 
 #map {
-  width: 50vh;
-  height: 50vh;
+  width: 210vh;
+  height: 70vh;
 }
 
 .tt-search-box {
-  width: 50vh;
+  width: 210vh;
   height: 5vh;
 }
