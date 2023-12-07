@@ -1,3 +1,112 @@
-# Whats_Near_You
+# [Cocktails Near You](https://danielharding1.github.io/Whats_Near_You/)
 
-This is the README file.
+## Table of Contents
+
+| Contents                                  |
+| ----------------------------------------- |
+| [Description](#description)               |
+| [Installation](#installation)             |
+| [Usage](#usage)                           |
+| [Credits](#credits)                       |
+| [Original Wireframe](#original-wireframe) |
+| [Liscence](#license)                      |
+
+## Description
+
+A cocktail creation site that suggests which cocktails you can create based on which ingredients you have in your cupboard at home. The site will also tell you the location of local restaurants and what time they open and close.
+
+### User Story
+
+I want to be able to make a cocktail after inputting the ingredients that I have in my kitchen and I would like to find local places which serve food or drink.
+
+### Accepance Criteria
+
+The project is complete when the user can search for an ingredient and a list of possible cocktails is displayed, and they can search near locations on the map.
+
+## Installation
+
+This application is available on a web browser at [Cocktails Near You](https://danielharding1.github.io/Whats_Near_You/).
+
+To access the Google Maps API please download it here.
+
+## Usage
+
+### Step 1:
+
+Click this [link](https://danielharding1.github.io/Whats_Near_You/) to open _Cocktails Near You_ in your browser.
+
+![Home Page for Cocktails Near You](./assets/images/homepage.JPG)
+
+### Step 2:
+
+In the top right corner type a drink you would like to make in the search bar and click 'Search'.
+
+![Searching Gin in search bar at top of homepage](./assets/images/ginsearch.JPG)
+
+### Step 3:
+
+Scroll down on the page to see what drinks you can make based on your searched item. In this case, 'Gin' returns 20 possible cocktail recipes!
+
+![results of search](./assets/images/section2gin.JPG)
+
+### Step 4:
+
+You can also use this application by selecting your desired mixer and searching that way.
+
+To do this, select your item and click search.
+
+![Choose your cocktail options by selecting an option](/assets/images/choose.JPG)
+
+In this example, we will select 'Tequila' and click search.
+
+![Example shows 'Tequila' selected](/assets/images/tequilaexample.JPG)
+
+All drinks containing the ingredient 'Tequila' will now be displayed on the page.
+
+### Step 5
+
+Now you have chosen your drink, choose from the list of recipes to learn the ingredients and how you can make it!
+
+In this example we have chosen 'Tequila' and have selected the '3-Mile Long Island Iced Tea', as shown below:
+
+![3 Mile Long Island Iced Tea Recipe](/assets/images/3milelong.JPG)
+
+### Step 6:
+
+Use the map to search for cocktail bars near you!
+
+![Google Maps Section](/assets/images/mapapi.JPG)
+
+### Map Navigation
+
+Please see the following diagram demonstrating how to navigate the map using the buttons in the bottom left corner of the page.
+
+![Map API Instruction Buttons](/assets/images/mapbuttons.JPG)
+
+## Credits
+
+### Follow the collaborators of this project on Github:
+
+| Collaborators   | Links                                       |
+| --------------- | ------------------------------------------- |
+| Daniel Harding  | [Github](https://github.com/DanielHarding1) |
+| Chelsea Chapman | [Github](https://github.com/chelsea32568)   |
+| Imogen Coughlin | [Github](https://github.com/imogenc0)       |
+
+### APIs Used:
+
+Cocktail API: [https://www.thecocktaildb.com/api.php](https://www.thecocktaildb.com/api.php)
+
+Google Maps API
+
+If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+
+If you followed tutorials, include links to those here as well.
+
+## Original Wireframe
+
+See the original wireframe sketch [here](https://www.figma.com/file/kghCtOeXogrnqPNpB5Ybv6/Untitled?type=design&mode=design&t=o9e5IxTnjneO4udm-1).
+
+## License
+
+MIT Liscence (see liscencing for more details)
