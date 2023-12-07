@@ -8,8 +8,7 @@
 | [Installation](#installation)             |
 | [Usage](#usage)                           |
 | [Credits](#credits)                       |
-| [Original Wireframe](#wireframe)          |
-| [Future Development](#future-development) |
+| [Original Wireframe](#original-wireframe) |
 | [Liscence](#license)                      |
 
 ## Description
@@ -104,7 +103,7 @@ If you used any third-party assets that require attribution, list the creators w
 
 If you followed tutorials, include links to those here as well.
 
-## Wireframe
+## Original Wireframe
 
 See the original wireframe sketch [here](https://www.figma.com/file/kghCtOeXogrnqPNpB5Ybv6/Untitled?type=design&mode=design&t=o9e5IxTnjneO4udm-1).
 
