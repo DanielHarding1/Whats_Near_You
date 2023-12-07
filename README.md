@@ -24,11 +24,6 @@ I want to be able to make a cocktail after inputting the ingredients that I have
 
 The project is complete when the user can search for an ingredient and a list of possible cocktails is displayed, and they can search near locations on the map.
 
-<!-- - What was your motivation?
-- Why did you build this project?
-- What problems does it solve?
-- What did you learn? -->
-
 ## Installation
 
 This application is available on a web browser at [Cocktails Near You](https://danielharding1.github.io/Whats_Near_You/).
@@ -91,13 +86,25 @@ Please see the following diagram demonstrating how to navigate the map using the
 
 ## Credits
 
-### Check out the collaborators' Github
+### Follow the collaborators of this project on Github:
 
-[Daniel Harding](https://github.com/DanielHarding1)
+> Daniel Harding
 
-[Chelsea Chapman](https://github.com/chelsea32568)
+- Map API
 
-[Imogen Coughlin](https://github.com/imogenc0)
+[Github](https://github.com/DanielHarding1)
+
+> Chelsea Chapman
+
+- Cocktail API
+
+[Github](https://github.com/chelsea32568)
+
+> Imogen Coughlin
+
+- HTML/CSS/README
+
+[Github](https://github.com/imogenc0)
 
 ### APIs Used:
 
