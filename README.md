@@ -1,5 +1,17 @@
 # [Cocktails Near You](https://danielharding1.github.io/Whats_Near_You/)
 
+## Table of Contents
+
+| Contents                                |
+| --------------------------------------- |
+| [Description](#description)             |
+| [Installation](#installation)           |
+| [Usage](#usage)                         |
+| [Credits](#credits)                     |
+| [Liscence](#license)                    |
+| [Features](#features)                   |
+| [How to Contribute](#how-to-contribute) |
+
 ## Description
 
 A cocktail creation site that suggests which cocktails you can create based on which ingredients you have in your cupboard at home. The site will also tell you the location of local restaurants and what time they open and close.
