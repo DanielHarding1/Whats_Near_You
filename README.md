@@ -88,23 +88,11 @@ Please see the following diagram demonstrating how to navigate the map using the
 
 ### Follow the collaborators of this project on Github:
 
-> Daniel Harding
-
-- Map API
-
-[Github](https://github.com/DanielHarding1)
-
-> Chelsea Chapman
-
-- Cocktail API
-
-[Github](https://github.com/chelsea32568)
-
-> Imogen Coughlin
-
-- HTML/CSS/README
-
-[Github](https://github.com/imogenc0)
+| Collaborators   | Links                                       |
+| --------------- | ------------------------------------------- |
+| Daniel Harding  | [Github](https://github.com/DanielHarding1) |
+| Chelsea Chapman | [Github](https://github.com/chelsea32568)   |
+| Imogen Coughlin | [Github](https://github.com/imogenc0)       |
 
 ### APIs Used:
 
